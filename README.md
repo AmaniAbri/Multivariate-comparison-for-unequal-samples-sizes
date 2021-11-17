@@ -12,7 +12,7 @@ install.packages("DTK")
 ```
 
 ## Loading  data
-```
+```ruby
 setwd("dir")
 dat=as.matrix(read.table("filename"))
 
@@ -23,7 +23,7 @@ B <-dat[, 2]
 Factors <-dat[, 3]
 ```
 ##  Creating factors using ANOVA
-```
+```ruby
 dat.anova=as.matrix(read.table("filename"))
 
 
@@ -34,6 +34,13 @@ AA <- factor(dat.anova[, 1])
 ```
 
 ## Convert dataframe columns from factors to characters
+ ```ruby
+ 
+FF_Ch <- as.character(FAC)
+BB_ch <- as.character(BB)
+AA_ch <- as.character(AA)
+
+```
 
 
 
