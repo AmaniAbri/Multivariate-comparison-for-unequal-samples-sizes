@@ -39,13 +39,19 @@ factors <- as.character(FAC)
 
 ```
 
-## DTK: A & factors
+## DTK: observations & factors
 ```ruby
 DTK.result<-DTK.test(x=A,f=fators,c,a=0.05)
 DTK.result
-DTK.plot(DTK.result)
 
-## Boxplot
+```
+
+## plot
+```ruby
+DTK.plot(DTK.result)
+```
+### Boxplot
+```ruby
 boxA <- boxplot(A~factors)
 
 ```
