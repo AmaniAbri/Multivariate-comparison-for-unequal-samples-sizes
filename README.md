@@ -20,7 +20,7 @@ dat=as.matrix(read.table("filename"))
 View(dat)
 A <- dat[, 1]
 B <-dat[, 2]
-Factors <-dat[, 3]
+C <-dat[, 3]
 ```
 ##  Creating factors using ANOVA
 ```ruby
@@ -28,19 +28,29 @@ dat.anova=as.matrix(read.table("filename"))
 
 
 FAC <-factor(dat.anova[, 3])
-BB <-factor(dat.anova[, 2])
-AA <- factor(dat.anova[, 1])
 
 ```
 
 ## Convert dataframe columns from factors to characters
  ```ruby
  
-FF_Ch <- as.character(FAC)
-BB_ch <- as.character(BB)
-AA_ch <- as.character(AA)
+factors <- as.character(FAC)
+
 
 ```
+
+## DTK: A & factors
+```ruby
+DTK.result<-DTK.test(x=A,f=fators,c,a=0.05)
+DTK.result
+DTK.plot(DTK.result)
+
+## Boxplot
+boxA <- boxplot(A~factors)
+
+```
+
+
 
 
 
